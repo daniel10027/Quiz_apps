@@ -54,6 +54,8 @@
 - [x] id_question foreign key references question(id)
 - [x] id_user foreign key references user(id)
 
+![alt text](https:github.com/daniel10027/Quiz_apps/img.png)
+
 
 
 
