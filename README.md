@@ -19,10 +19,12 @@
 - [x] recompense varchar
 
 ### theme
+
 - [x] id primary key autoincrement 
 - [x] nom varchar
 
 ### question
+
 - [x] id primary key autoincrement 
 - [x] id_theme foreign key references theme(id)
 - [x] id_solution foreign key references solution(id)
@@ -38,17 +40,20 @@
 
 
 ### quiz_question
+
 - [x] id primary key autoincrement 
 - [x] id_quiz foreign key references quiz(id)
 - [x] id_question foreign key references question(id)
 
 ### quiz_valide
+
 - [x] id primary key autoincrement 
 - [x] id_quiz foreign key references quiz(id)
 - [x] id_user foreign key references user(id)
 - [x] date_validation date
 
 ### quiz
+
 - [x] id primary key autoincrement 
 - [x] id_quiz foreign key references quiz(id)
 - [x] id_question foreign key references question(id)
